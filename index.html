@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Phone Hunter</title>
+  </head>
+  <body>
+    <h1 class="text-6xl text-black text-center">Phone Hunter</h1>
+    <div class="form-control max-w-xs mx-auto my-5 mt-10">
+      <input
+        id="input"
+        type="text"
+        placeholder="Type here"
+        class="input input-bordered w-full max-w-xs mb-5"
+      />
+      <button id="btn" class="btn btn-active">Button</button>
+    </div>
+
+    <div id="place" class="ccontainerr"></div>
+
+    <p id="msg" class="text-2xl text-center p-10 hidden">
+      Invalid Search.Try a valid name.
+    </p>
+
+    <span id="loader" class="flex h-5 w-5 hidden">
+      <span
+        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+      ></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+    </span>
+
+    <script src="script.js"></script>
+  </body>
+</html>
